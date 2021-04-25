@@ -1,2 +1,13 @@
 stellargraph
 networkx
+fastapi~=0.63.0
+starlette
+gensim==3.6.0
+numpy~=1.20.2
+nltk~=3.6.2
+uvicorn
+python-Levenshtein
+aiofiles
+jinja2
+python-multipart
+pydantic~=1.8.1
