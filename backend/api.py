@@ -25,6 +25,12 @@ def get_citation_metadata():
     return df
 
 
+def get_articles(ids):
+    citations = get_citation_metadata()
+    sampled_articles = citations[citations["paper_id"].isin(ids)]
+    return sampled_articles
+
+
 def get_random_articles(amount=10):
     citations = get_citation_metadata()
     sampled_articles = citations.sample(n=amount)

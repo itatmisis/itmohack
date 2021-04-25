@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-    background: url("../logo.svg") no-repeat center center;
+    background: url("../static/logo.svg") no-repeat center center;
     background-size: 40px 40px;
 }
 
@@ -51,7 +51,7 @@ header {
     background-color: #3498DB;
     outline: 0;
 }
-
+Book
 .profile:active {
     color: #f7f7f7;
     background-color: #398cb2;
@@ -97,7 +97,7 @@ header {
 
 .title h3{
     font-size: 1.2em;
-    color: #ffffff;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -109,7 +109,7 @@ h3 {
 }
 
 .name {
-    color: white;
+    color: black;
     padding-bottom: 9px;
 }
 
@@ -151,7 +151,7 @@ p {
 
 #myInput {
 
-    background-image: url('../searchicon.png'); /* Add a search icon to input */
+    background-image: url('../static/searchicon.png'); /* Add a search icon to input */
     background-position: 98%; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
     background-size: 17px 17px;
@@ -170,7 +170,7 @@ input[type=text]:focus {
 /*==============DROPDOWN======================*/
 .dropbtn {
     background-color: #3498DB;
-    color: white;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -191,6 +191,7 @@ input[type=text]:focus {
 }
 
 .content {
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -220,21 +221,22 @@ input[type=text]:focus {
 
 .event_stock {
     position: relative;
-    background-image: url("../event.jpg");
+    background-image: url("../static/picture.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 210px;
 }
 
 .org_stock {
-    background-image: url("../organization.jpg");
-    background-size: 100%;
+    background-image: url("../static/picture.png");
+    background-size: 40%;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 210px;
 }
 
 .book_stock {
-    background-image: url("../book.jpg");
+    background-image: url("../static/picture.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 200px;

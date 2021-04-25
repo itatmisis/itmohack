@@ -5,8 +5,8 @@
     <title>Culture In</title>
 <!--    <meta http-equiv="refresh" content="5"/> -->
 
-    <link rel="stylesheet" href="../static/css/main_map.css">
-    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/main_map.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/normalize.css') }}">
 </head>
 <body>
 <header>
@@ -15,9 +15,8 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Фильтр</button>
         <div id="myDropdown" class="dropdown-content">
-            <a class = "books" href="#">Книга</a>
-            <a class = "events" href="#">Мероприятие</a>
-            <a class = "org" href="#">Организация</a>
+            <a class = "books" href="#">Научная статья</a>
+            <a class = "events" href="#">Просидинг</a>
             <a class = "gen" href="#">Общее</a>
         </div>
     </div>
@@ -25,86 +24,7 @@
     <div class="logout">ВЫЙТИ</div>
 </header>
 <div class="grid">
-    <div class="item Club">
-        <div class="content">
-            <div class="title">
-                <h3>Организация</h3>
-            </div>
-            <div class="desc">
-                <div class = "org_stock"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-            </div>
-        </div>
-    </div>
-    <div class="item Book">
-        <div class="content">
-            <div class="title">
-                <h3>Книга</h3>
-            </div>
-            <div class="desc">
-                <div class = "book_stock"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-            </div>
-        </div>
-    </div>
-    <div class="item Book">
-        <div class="content">
-            <div class="title">
-                <h3>Книга</h3>
-            </div>
-            <div class="desc">
-                <div class = "book_stock"></div>
-                <p>Lorem ipsum dolor sit amet, conse</p>
-            </div>
-        </div>
-    </div>
-    <div class="item Event">
-        <div class="content">
-            <div class="title">
-                <h3>Мероприятие</h3>
-            </div>
-            <div class="desc">
-                <div class = "event_stock"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-            </div>
-        </div>
-    </div>
-    <div class="item Event">
-        <div class="content">
-            <div class="title">
-                <h3>Мероприятие</h3>
-            </div>
-            <div class="desc">
-                <div class = "event_stock"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
-            </div>
-        </div>
-    </div>
-    <div class="item Club">
-        <div class="content">
-            <div class="title">
-                <h3>Организация</h3>
-            </div>
-            <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
-            </div>
-        </div>
-    </div>
-    <div class="item Event">
-        <div class="content">
-            <div class="title">
-                <h3>Мероприятие</h3>
-                <div class = "name">Лимоновские чтения: 01/01/2020</div>
-            </div>
-            <div class = "event_stock"></div>
 
-            <div class="desc">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
-            </div>
-        </div>
     </div>
 
 
@@ -112,9 +32,8 @@
 
 </body>
 <!-- <script src="/node_modules/bson/dist/bson.bundle.js"></script> -->
-<script src="node_modules/bson/dist/bson.browser.esm.js"></script>
 <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
-<script src="../static/js/main_map.js"></script>
+<script src="{{ url_for('static', path='/js/main_map.js') }}"></script>
 <script>
     function resizeGridItem(item){
         grid = document.getElementsByClassName("grid")[0];
