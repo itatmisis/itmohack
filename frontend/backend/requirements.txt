@@ -1,0 +1,16 @@
+sanic
+sanic-mongodb-extension
+sanic-jinja2
+sanic-openapi
+sanic-cors
+
+umongo[motor]
+motor
+dnspython
+pandas
+pymongo
+
+nltk
+pymorphy2
+scikit-learn
+surprise

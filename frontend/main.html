@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Culture In</title>
+<!--    <meta http-equiv="refresh" content="5"/> -->
+
+    <link rel="stylesheet" href="css/main_map.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<header>
+    <div class = "logo"></div>
+    <input type="text" id="myInput" onkeyup="searchText()" placeholder="Поиск">
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Фильтр</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a class = "books" href="#">Книга</a>
+            <a class = "events" href="#">Мероприятие</a>
+            <a class = "org" href="#">Организация</a>
+            <a class = "gen" href="#">Общее</a>
+        </div>
+    </div>
+    <div class="profile">ПРОФИЛЬ</div>
+    <div class="logout">ВЫЙТИ</div>
+</header>
+<div class="grid">
+    <div class="item Club">
+        <div class="content">
+            <div class="title">
+                <h3>Организация</h3>
+            </div>
+            <div class="desc">
+                <div class = "org_stock"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+            </div>
+        </div>
+    </div>
+    <div class="item Book">
+        <div class="content">
+            <div class="title">
+                <h3>Книга</h3>
+            </div>
+            <div class="desc">
+                <div class = "book_stock"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
+            </div>
+        </div>
+    </div>
+    <div class="item Book">
+        <div class="content">
+            <div class="title">
+                <h3>Книга</h3>
+            </div>
+            <div class="desc">
+                <div class = "book_stock"></div>
+                <p>Lorem ipsum dolor sit amet, conse</p>
+            </div>
+        </div>
+    </div>
+    <div class="item Event">
+        <div class="content">
+            <div class="title">
+                <h3>Мероприятие</h3>
+            </div>
+            <div class="desc">
+                <div class = "event_stock"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+            </div>
+        </div>
+    </div>
+    <div class="item Event">
+        <div class="content">
+            <div class="title">
+                <h3>Мероприятие</h3>
+            </div>
+            <div class="desc">
+                <div class = "event_stock"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+            </div>
+        </div>
+    </div>
+    <div class="item Club">
+        <div class="content">
+            <div class="title">
+                <h3>Организация</h3>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+            </div>
+        </div>
+    </div>
+    <div class="item Event">
+        <div class="content">
+            <div class="title">
+                <h3>Мероприятие</h3>
+                <div class = "name">Лимоновские чтения: 01/01/2020</div>
+            </div>
+            <div class = "event_stock"></div>
+
+            <div class="desc">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<!-- <script src="/node_modules/bson/dist/bson.bundle.js"></script> -->
+<script src="node_modules/bson/dist/bson.browser.esm.js"></script>
+<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main_map.js"></script>
+<script>
+    function resizeGridItem(item){
+        grid = document.getElementsByClassName("grid")[0];
+        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+        rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+        item.style.gridRowEnd = "span "+rowSpan;
+    }
+
+    function resizeAllGridItems(){
+        allItems = document.getElementsByClassName("item");
+        for(x=0;x<allItems.length;x++){
+            resizeGridItem(allItems[x]);
+        }
+    }
+
+    function resizeInstance(instance){
+        item = instance.elements[0];
+        resizeGridItem(item);
+    }
+
+    window.onload = resizeAllGridItems();
+    window.addEventListener("resize", resizeAllGridItems);
+
+    allItems = document.getElementsByClassName("item");
+    for(x=0;x<allItems.length;x++){
+        imagesLoaded( allItems[x], resizeInstance);
+    }
+</script>
+<script>
+
+
+</script>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+</html>

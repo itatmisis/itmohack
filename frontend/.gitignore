@@ -1,0 +1,7 @@
+/.idea/
+/venv/
+**/__pycache__/
+/backend/ml/models/
+/backend/ml/dataset/
+/backend/data/
+/node_modules/
