@@ -1,11 +1,7 @@
 import pandas as pd
-
+import stellargraph as sg
 from stellargraph.data import EdgeSplitter
 from stellargraph.mapper import GraphSAGELinkGenerator
-from tensorflow import keras
-
-import stellargraph as sg
-from stellargraph.layer import MeanAggregator, LinkEmbedding
 
 
 def form_graph(edges_path, meta_path, ids_path, meta_received):
@@ -44,10 +40,12 @@ def form_graph(edges_path, meta_path, ids_path, meta_received):
 
 def inference(embeddings):
     G = form_graph("data/cutted_edges.csv", "data/cutted_features.csv", "data/cutted_edges_to.csv", embeddings)
+    edge_splitter_full = EdgeSplitter(G)
+
+    import keras as keras
+    from stellargraph.layer import MeanAggregator, LinkEmbedding
     model = keras.models.load_model('data/w_rev1.h5',
                                     custom_objects={'MeanAggregator': MeanAggregator, 'LinkEmbedding': LinkEmbedding})
-
-    edge_splitter_full = EdgeSplitter(G)
 
     G_full, edge_ids_full, edge_labels_full = edge_splitter_full.train_test_split(
         p=0.5, method="global", keep_connected=True

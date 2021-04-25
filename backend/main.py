@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import random
 from pathlib import Path
 from typing import Optional
 import json
@@ -39,11 +40,10 @@ async def index(request: Request):
 async def get_result(request: Request):
     desc = (await request.form())['description']
     embeddings = api.get_embedings(desc)
-    sorted_ids = api.get_graph_ids(embeddings)
-    string_ids = json.dumps(sorted_ids)
+    # sorted_ids = api.get_graph_ids(embeddings)
+    sampled_articles = api.get_random_articles(10)
 
-    print(string_ids)
-    return Response(string_ids, media_type='application/json')
+    return templates.TemplateResponse("main.html", {"request": request})
 
 
 if __name__ == "__main__":
