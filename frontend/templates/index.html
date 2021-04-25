@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Survey Form</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">GRAPH RECOMMENDER</h1>
+    <p id="description" class="description text-center">
+
+    </p>
+  </header>
+  <form id="survey-form">
+
+    <div class="form-group">
+      <label id="universities-label">Организации</label>
+      <input
+        type="email"
+        name="orgs"
+        id="email"
+        class="form-control"
+        placeholder="Компании, университеты, исследовательские группы"
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        > Тэги </span></label
+      >
+      <input
+        min="10"
+        max="99"
+        name="keywords"
+        class="form-control"
+        placeholder="Ключевые слова, отражающие интересующую область"
+      />
+    </div>
+    <div class="form-group">
+      <p>Описание</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="description"
+        placeholder="Подробное описание интересующего содержания"
+        required
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+       Отправить
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<!--===============================================================================================-->
+<script src="{{ url_for('static', path='/js/script.js') }}"></script>
+</html>
